@@ -1,0 +1,95 @@
+/*
+ * Steampunk Design
+ */
+
+/* ============================================
+   STEAMPUNK DESIGN
+   ============================================ */
+
+/* Steampunk - Light Theme */
+.toastybyte-toast.design-steampunk.theme-light.variant-success {
+  background: rgb(254, 252, 232);
+  border: 2px solid rgb(180, 83, 9);
+  color: rgb(120, 53, 15);
+}
+
+.toastybyte-toast.design-steampunk.theme-light.variant-error {
+  background: rgb(255, 247, 237);
+  border: 2px solid rgb(154, 52, 18);
+  color: rgb(124, 45, 18);
+}
+
+.toastybyte-toast.design-steampunk.theme-light.variant-warning {
+  background: rgb(254, 252, 232);
+  border: 2px solid rgb(161, 98, 7);
+  color: rgb(133, 77, 14);
+}
+
+.toastybyte-toast.design-steampunk.theme-light.variant-info {
+  background: rgb(250, 250, 249);
+  border: 2px solid rgb(120, 113, 108);
+  color: rgb(87, 83, 78);
+}
+
+/* Steampunk - Dark Theme */
+.toastybyte-toast.design-steampunk.theme-dark.variant-success {
+  background: rgb(69, 26, 3);
+  border: 2px solid rgb(217, 119, 6);
+  color: rgb(253, 230, 138);
+}
+
+.toastybyte-toast.design-steampunk.theme-dark.variant-error {
+  background: rgb(67, 20, 7);
+  border: 2px solid rgb(234, 88, 12);
+  color: rgb(254, 215, 170);
+}
+
+.toastybyte-toast.design-steampunk.theme-dark.variant-warning {
+  background: rgb(66, 32, 6);
+  border: 2px solid rgb(202, 138, 4);
+  color: rgb(253, 224, 71);
+}
+
+.toastybyte-toast.design-steampunk.theme-dark.variant-info {
+  background: rgb(28, 25, 23);
+  border: 2px solid rgb(168, 162, 158);
+  color: rgb(231, 229, 228);
+}
+
+/* Steampunk - Icon Containers */
+.toastybyte-icon-container.design-steampunk.variant-success {
+  background: linear-gradient(135deg, rgb(217, 119, 6) 0%, rgb(180, 83, 9) 100%);
+  color: rgb(254, 252, 232);
+}
+
+.toastybyte-icon-container.design-steampunk.variant-error {
+  background: linear-gradient(135deg, rgb(234, 88, 12) 0%, rgb(194, 65, 12) 100%);
+  color: rgb(255, 247, 237);
+}
+
+.toastybyte-icon-container.design-steampunk.variant-warning {
+  background: linear-gradient(135deg, rgb(202, 138, 4) 0%, rgb(161, 98, 7) 100%);
+  color: rgb(254, 252, 232);
+}
+
+.toastybyte-icon-container.design-steampunk.variant-info {
+  background: linear-gradient(135deg, rgb(168, 162, 158) 0%, rgb(120, 113, 108) 100%);
+  color: rgb(250, 250, 249);
+}
+
+/* Steampunk - Progress Bars */
+.toastybyte-progress-bar.design-steampunk.variant-success {
+  background: linear-gradient(90deg, rgb(217, 119, 6) 0%, rgb(180, 83, 9) 100%);
+}
+
+.toastybyte-progress-bar.design-steampunk.variant-error {
+  background: linear-gradient(90deg, rgb(234, 88, 12) 0%, rgb(194, 65, 12) 100%);
+}
+
+.toastybyte-progress-bar.design-steampunk.variant-warning {
+  background: linear-gradient(90deg, rgb(202, 138, 4) 0%, rgb(161, 98, 7) 100%);
+}
+
+.toastybyte-progress-bar.design-steampunk.variant-info {
+  background: linear-gradient(90deg, rgb(168, 162, 158) 0%, rgb(120, 113, 108) 100%);
+}

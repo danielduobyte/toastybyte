@@ -1,0 +1,99 @@
+/*
+ * Outlined Design
+ */
+
+/* ============================================
+   OUTLINED DESIGN
+   ============================================ */
+
+/* Outlined - Light Theme */
+.toastybyte-toast.design-outlined.theme-light.variant-success {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgb(16, 185, 129);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-outlined.theme-light.variant-error {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgb(244, 63, 94);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-outlined.theme-light.variant-warning {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgb(245, 158, 11);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-outlined.theme-light.variant-info {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgb(14, 165, 233);
+  color: rgb(17, 24, 39);
+}
+
+/* Outlined - Dark Theme */
+.toastybyte-toast.design-outlined.theme-dark.variant-success {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid rgb(52, 211, 153);
+  color: white;
+}
+
+.toastybyte-toast.design-outlined.theme-dark.variant-error {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid rgb(248, 113, 113);
+  color: white;
+}
+
+.toastybyte-toast.design-outlined.theme-dark.variant-warning {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid rgb(251, 191, 36);
+  color: white;
+}
+
+.toastybyte-toast.design-outlined.theme-dark.variant-info {
+  background: rgba(17, 24, 39, 0.8);
+  border: 2px solid rgb(56, 189, 248);
+  color: white;
+}
+
+/* Outlined - Icon Containers */
+.toastybyte-icon-container.design-outlined.variant-success {
+  background: rgb(236, 253, 245);
+  border: 2px solid rgb(16, 185, 129);
+  color: rgb(5, 150, 105);
+}
+
+.toastybyte-icon-container.design-outlined.variant-error {
+  background: rgb(255, 241, 242);
+  border: 2px solid rgb(244, 63, 94);
+  color: rgb(220, 38, 38);
+}
+
+.toastybyte-icon-container.design-outlined.variant-warning {
+  background: rgb(254, 252, 232);
+  border: 2px solid rgb(245, 158, 11);
+  color: rgb(217, 119, 6);
+}
+
+.toastybyte-icon-container.design-outlined.variant-info {
+  background: rgb(240, 249, 255);
+  border: 2px solid rgb(14, 165, 233);
+  color: rgb(2, 132, 199);
+}
+
+/* Outlined - Progress Bars */
+.toastybyte-progress-bar.design-outlined.variant-success {
+  background: rgb(16, 185, 129);
+}
+
+.toastybyte-progress-bar.design-outlined.variant-error {
+  background: rgb(244, 63, 94);
+}
+
+.toastybyte-progress-bar.design-outlined.variant-warning {
+  background: rgb(245, 158, 11);
+}
+
+.toastybyte-progress-bar.design-outlined.variant-info {
+  background: rgb(14, 165, 233);
+}

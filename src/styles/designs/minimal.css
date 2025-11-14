@@ -1,0 +1,95 @@
+/*
+ * Minimal Design
+ */
+
+/* ============================================
+   MINIMAL DESIGN
+   ============================================ */
+
+/* Minimal - Light Theme */
+.toastybyte-toast.design-minimal.theme-light.variant-success {
+  background: white;
+  border: 1px solid rgb(167, 243, 208);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-minimal.theme-light.variant-error {
+  background: white;
+  border: 1px solid rgb(254, 205, 211);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-minimal.theme-light.variant-warning {
+  background: white;
+  border: 1px solid rgb(253, 230, 138);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-minimal.theme-light.variant-info {
+  background: white;
+  border: 1px solid rgb(186, 230, 253);
+  color: rgb(17, 24, 39);
+}
+
+/* Minimal - Dark Theme */
+.toastybyte-toast.design-minimal.theme-dark.variant-success {
+  background: rgb(31, 41, 55);
+  border: 1px solid rgba(4, 120, 87, 0.4);
+  color: rgb(243, 244, 246);
+}
+
+.toastybyte-toast.design-minimal.theme-dark.variant-error {
+  background: rgb(31, 41, 55);
+  border: 1px solid rgba(185, 28, 28, 0.4);
+  color: rgb(243, 244, 246);
+}
+
+.toastybyte-toast.design-minimal.theme-dark.variant-warning {
+  background: rgb(31, 41, 55);
+  border: 1px solid rgba(180, 83, 9, 0.4);
+  color: rgb(243, 244, 246);
+}
+
+.toastybyte-toast.design-minimal.theme-dark.variant-info {
+  background: rgb(31, 41, 55);
+  border: 1px solid rgba(3, 105, 161, 0.4);
+  color: rgb(243, 244, 246);
+}
+
+/* Minimal - Icon Containers */
+.toastybyte-icon-container.design-minimal.variant-success {
+  background: rgb(5, 150, 105);
+  color: white;
+}
+
+.toastybyte-icon-container.design-minimal.variant-error {
+  background: rgb(220, 38, 38);
+  color: white;
+}
+
+.toastybyte-icon-container.design-minimal.variant-warning {
+  background: rgb(217, 119, 6);
+  color: white;
+}
+
+.toastybyte-icon-container.design-minimal.variant-info {
+  background: rgb(2, 132, 199);
+  color: white;
+}
+
+/* Minimal - Progress Bars */
+.toastybyte-progress-bar.design-minimal.variant-success {
+  background: rgb(16, 185, 129);
+}
+
+.toastybyte-progress-bar.design-minimal.variant-error {
+  background: rgb(244, 63, 94);
+}
+
+.toastybyte-progress-bar.design-minimal.variant-warning {
+  background: rgb(245, 158, 11);
+}
+
+.toastybyte-progress-bar.design-minimal.variant-info {
+  background: rgb(14, 165, 233);
+}

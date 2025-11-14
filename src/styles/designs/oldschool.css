@@ -1,0 +1,95 @@
+/*
+ * Old School Design
+ */
+
+/* ============================================
+   OLDSCHOOL DESIGN
+   ============================================ */
+
+/* Oldschool - Light Theme */
+.toastybyte-toast.design-oldschool.theme-light.variant-success {
+  background: rgb(236, 253, 245);
+  border: 4px solid rgb(5, 150, 105);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-oldschool.theme-light.variant-error {
+  background: rgb(255, 241, 242);
+  border: 4px solid rgb(220, 38, 38);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-oldschool.theme-light.variant-warning {
+  background: rgb(254, 252, 232);
+  border: 4px solid rgb(202, 138, 4);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-oldschool.theme-light.variant-info {
+  background: rgb(240, 249, 255);
+  border: 4px solid rgb(37, 99, 235);
+  color: rgb(17, 24, 39);
+}
+
+/* Oldschool - Dark Theme */
+.toastybyte-toast.design-oldschool.theme-dark.variant-success {
+  background: rgb(4, 120, 87);
+  border: 4px solid rgb(52, 211, 153);
+  color: white;
+}
+
+.toastybyte-toast.design-oldschool.theme-dark.variant-error {
+  background: rgb(185, 28, 28);
+  border: 4px solid rgb(248, 113, 113);
+  color: white;
+}
+
+.toastybyte-toast.design-oldschool.theme-dark.variant-warning {
+  background: rgb(161, 98, 7);
+  border: 4px solid rgb(250, 204, 21);
+  color: white;
+}
+
+.toastybyte-toast.design-oldschool.theme-dark.variant-info {
+  background: rgb(29, 78, 216);
+  border: 4px solid rgb(96, 165, 250);
+  color: white;
+}
+
+/* Oldschool - Icon Containers */
+.toastybyte-icon-container.design-oldschool.variant-success {
+  background: rgb(5, 150, 105);
+  color: white;
+}
+
+.toastybyte-icon-container.design-oldschool.variant-error {
+  background: rgb(220, 38, 38);
+  color: white;
+}
+
+.toastybyte-icon-container.design-oldschool.variant-warning {
+  background: rgb(202, 138, 4);
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-icon-container.design-oldschool.variant-info {
+  background: rgb(37, 99, 235);
+  color: white;
+}
+
+/* Oldschool - Progress Bars */
+.toastybyte-progress-bar.design-oldschool.variant-success {
+  background: rgb(5, 150, 105);
+}
+
+.toastybyte-progress-bar.design-oldschool.variant-error {
+  background: rgb(220, 38, 38);
+}
+
+.toastybyte-progress-bar.design-oldschool.variant-warning {
+  background: rgb(202, 138, 4);
+}
+
+.toastybyte-progress-bar.design-oldschool.variant-info {
+  background: rgb(37, 99, 235);
+}

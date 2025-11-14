@@ -1,0 +1,87 @@
+/*
+ * Brutalist Design
+ */
+
+/* ============================================
+   BRUTALIST DESIGN
+   ============================================ */
+
+/* Brutalist - Light Theme */
+.toastybyte-toast.design-brutalist.theme-light.variant-success {
+  background: rgb(236, 253, 245);
+  border: 4px solid black;
+  color: black;
+}
+
+.toastybyte-toast.design-brutalist.theme-light.variant-error {
+  background: rgb(255, 241, 242);
+  border: 4px solid black;
+  color: black;
+}
+
+.toastybyte-toast.design-brutalist.theme-light.variant-warning {
+  background: rgb(254, 252, 232);
+  border: 4px solid black;
+  color: black;
+}
+
+.toastybyte-toast.design-brutalist.theme-light.variant-info {
+  background: rgb(240, 249, 255);
+  border: 4px solid black;
+  color: black;
+}
+
+/* Brutalist - Dark Theme */
+.toastybyte-toast.design-brutalist.theme-dark.variant-success {
+  background: rgb(5, 150, 105);
+  border: 4px solid white;
+  color: white;
+}
+
+.toastybyte-toast.design-brutalist.theme-dark.variant-error {
+  background: rgb(220, 38, 38);
+  border: 4px solid white;
+  color: white;
+}
+
+.toastybyte-toast.design-brutalist.theme-dark.variant-warning {
+  background: rgb(217, 119, 6);
+  border: 4px solid white;
+  color: white;
+}
+
+.toastybyte-toast.design-brutalist.theme-dark.variant-info {
+  background: rgb(2, 132, 199);
+  border: 4px solid white;
+  color: white;
+}
+
+/* Brutalist - Icon Containers */
+.toastybyte-icon-container.design-brutalist.variant-success {
+  background: black;
+  color: rgb(52, 211, 153);
+  border: 3px solid black;
+}
+
+.toastybyte-icon-container.design-brutalist.variant-error {
+  background: black;
+  color: rgb(248, 113, 113);
+  border: 3px solid black;
+}
+
+.toastybyte-icon-container.design-brutalist.variant-warning {
+  background: black;
+  color: rgb(251, 191, 36);
+  border: 3px solid black;
+}
+
+.toastybyte-icon-container.design-brutalist.variant-info {
+  background: black;
+  color: rgb(56, 189, 248);
+  border: 3px solid black;
+}
+
+/* Brutalist - Progress Bars */
+.toastybyte-progress-bar.design-brutalist {
+  background: black;
+}

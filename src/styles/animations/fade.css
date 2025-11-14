@@ -1,0 +1,30 @@
+/**
+ * Fade Transition
+ * Simple opacity fade
+ */
+
+@keyframes toastybyte-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes toastybyte-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.toastybyte-toast.transition-fade.entering {
+  animation: toastybyte-fade-in 0.3s ease-out forwards;
+}
+
+.toastybyte-toast.transition-fade.exiting {
+  animation: toastybyte-fade-out 0.2s ease-out forwards;
+}

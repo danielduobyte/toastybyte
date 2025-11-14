@@ -1,0 +1,54 @@
+/**
+ * Drop Transition
+ * fall/squash/bounce phases with per-segment easing
+ */
+
+@keyframes toastybyte-drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-150px) scaleY(1.3) scaleX(0.8);
+    animation-timing-function: cubic-bezier(0.34, 0, 0.1, 1);
+    /* Fast drop */
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(15px) scaleY(0.7) scaleX(1.2);
+    animation-timing-function: cubic-bezier(0.22, 1.6, 0.36, 1);
+    /* Bounce up */
+  }
+
+  60% {
+    transform: translateY(-8px) scaleY(1.1) scaleX(0.92);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  }
+
+  80% {
+    transform: translateY(2px) scaleY(0.98) scaleX(1.02);
+    animation-timing-function: ease-out;
+  }
+
+  to {
+    transform: translateY(0) scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes toastybyte-drop-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(80px) scale(0.7);
+  }
+}
+
+.toastybyte-toast.transition-drop.entering {
+  animation: toastybyte-drop-in 0.5s linear forwards;
+}
+
+.toastybyte-toast.transition-drop.exiting {
+  animation: toastybyte-drop-out 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+}

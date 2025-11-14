@@ -1,0 +1,96 @@
+/**
+ * Terminal Design
+ * Monochrome terminal-inspired design with tech aesthetic
+ */
+
+/* ============================================
+   TERMINAL DESIGN
+   ============================================ */
+
+/* Terminal - Light Theme */
+.toastybyte-toast.design-terminal.theme-light.variant-success {
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(52, 211, 153);
+  color: rgb(4, 120, 87);
+}
+
+.toastybyte-toast.design-terminal.theme-light.variant-error {
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(248, 113, 113);
+  color: rgb(185, 28, 28);
+}
+
+.toastybyte-toast.design-terminal.theme-light.variant-warning {
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(251, 191, 36);
+  color: rgb(180, 83, 9);
+}
+
+.toastybyte-toast.design-terminal.theme-light.variant-info {
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(34, 211, 238);
+  color: rgb(15, 118, 110);
+}
+
+/* Terminal - Dark Theme */
+.toastybyte-toast.design-terminal.theme-dark.variant-success {
+  background: rgb(3, 7, 18);
+  border: 1px solid rgb(16, 185, 129);
+  color: rgb(52, 211, 153);
+}
+
+.toastybyte-toast.design-terminal.theme-dark.variant-error {
+  background: rgb(3, 7, 18);
+  border: 1px solid rgb(244, 63, 94);
+  color: rgb(248, 113, 113);
+}
+
+.toastybyte-toast.design-terminal.theme-dark.variant-warning {
+  background: rgb(3, 7, 18);
+  border: 1px solid rgb(245, 158, 11);
+  color: rgb(251, 191, 36);
+}
+
+.toastybyte-toast.design-terminal.theme-dark.variant-info {
+  background: rgb(3, 7, 18);
+  border: 1px solid rgb(6, 182, 212);
+  color: rgb(34, 211, 238);
+}
+
+/* Terminal - Icon Containers */
+.toastybyte-icon-container.design-terminal.variant-success {
+  background: rgb(16, 185, 129);
+  color: rgb(3, 7, 18);
+}
+
+.toastybyte-icon-container.design-terminal.variant-error {
+  background: rgb(244, 63, 94);
+  color: rgb(3, 7, 18);
+}
+
+.toastybyte-icon-container.design-terminal.variant-warning {
+  background: rgb(245, 158, 11);
+  color: rgb(3, 7, 18);
+}
+
+.toastybyte-icon-container.design-terminal.variant-info {
+  background: rgb(6, 182, 212);
+  color: rgb(3, 7, 18);
+}
+
+/* Terminal - Progress Bars */
+.toastybyte-progress-bar.design-terminal.variant-success {
+  background: rgb(16, 185, 129);
+}
+
+.toastybyte-progress-bar.design-terminal.variant-error {
+  background: rgb(244, 63, 94);
+}
+
+.toastybyte-progress-bar.design-terminal.variant-warning {
+  background: rgb(245, 158, 11);
+}
+
+.toastybyte-progress-bar.design-terminal.variant-info {
+  background: rgb(6, 182, 212);
+}

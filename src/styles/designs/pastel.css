@@ -1,0 +1,95 @@
+/*
+ * Pastel Design
+ */
+
+/* ============================================
+   PASTEL DESIGN
+   ============================================ */
+
+/* Pastel - Light Theme */
+.toastybyte-toast.design-pastel.theme-light.variant-success {
+  background: rgb(209, 250, 229);
+  border: 1px solid rgb(167, 243, 208);
+  color: rgb(6, 78, 59);
+}
+
+.toastybyte-toast.design-pastel.theme-light.variant-error {
+  background: rgb(254, 202, 202);
+  border: 1px solid rgb(254, 205, 211);
+  color: rgb(127, 29, 29);
+}
+
+.toastybyte-toast.design-pastel.theme-light.variant-warning {
+  background: rgb(254, 243, 199);
+  border: 1px solid rgb(253, 230, 138);
+  color: rgb(120, 53, 15);
+}
+
+.toastybyte-toast.design-pastel.theme-light.variant-info {
+  background: rgb(219, 234, 254);
+  border: 1px solid rgb(191, 219, 254);
+  color: rgb(30, 58, 138);
+}
+
+/* Pastel - Dark Theme */
+.toastybyte-toast.design-pastel.theme-dark.variant-success {
+  background: rgba(6, 78, 59, 0.4);
+  border: 1px solid rgba(6, 78, 59, 0.5);
+  color: rgb(167, 243, 208);
+}
+
+.toastybyte-toast.design-pastel.theme-dark.variant-error {
+  background: rgba(76, 5, 25, 0.4);
+  border: 1px solid rgba(76, 5, 25, 0.5);
+  color: rgb(252, 165, 165);
+}
+
+.toastybyte-toast.design-pastel.theme-dark.variant-warning {
+  background: rgba(69, 26, 3, 0.4);
+  border: 1px solid rgba(69, 26, 3, 0.5);
+  color: rgb(253, 224, 71);
+}
+
+.toastybyte-toast.design-pastel.theme-dark.variant-info {
+  background: rgba(30, 58, 138, 0.4);
+  border: 1px solid rgba(30, 58, 138, 0.5);
+  color: rgb(147, 197, 253);
+}
+
+/* Pastel - Icon Containers */
+.toastybyte-icon-container.design-pastel.variant-success {
+  background: rgb(167, 243, 208);
+  color: rgb(4, 120, 87);
+}
+
+.toastybyte-icon-container.design-pastel.variant-error {
+  background: rgb(254, 205, 211);
+  color: rgb(185, 28, 28);
+}
+
+.toastybyte-icon-container.design-pastel.variant-warning {
+  background: rgb(253, 230, 138);
+  color: rgb(180, 83, 9);
+}
+
+.toastybyte-icon-container.design-pastel.variant-info {
+  background: rgb(191, 219, 254);
+  color: rgb(29, 78, 216);
+}
+
+/* Pastel - Progress Bars */
+.toastybyte-progress-bar.design-pastel.variant-success {
+  background: rgb(134, 239, 172);
+}
+
+.toastybyte-progress-bar.design-pastel.variant-error {
+  background: rgb(252, 165, 165);
+}
+
+.toastybyte-progress-bar.design-pastel.variant-warning {
+  background: rgb(253, 224, 71);
+}
+
+.toastybyte-progress-bar.design-pastel.variant-info {
+  background: rgb(147, 197, 253);
+}

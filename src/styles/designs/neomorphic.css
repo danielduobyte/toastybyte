@@ -1,0 +1,95 @@
+/*
+ * Neomorphic Design
+ */
+
+/* ============================================
+   NEOMORPHIC DESIGN
+   ============================================ */
+
+/* Neomorphic - Light Theme */
+.toastybyte-toast.design-neomorphic.theme-light {
+  background: rgb(249, 250, 251);
+  border: none;
+  color: rgb(31, 41, 55);
+  box-shadow:
+    12px 12px 24px rgba(163, 177, 198, 0.6),
+    -12px -12px 24px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.toastybyte-toast.design-neomorphic.theme-light .toastybyte-content.variant-success {
+  color: rgb(4, 120, 87);
+}
+
+.toastybyte-toast.design-neomorphic.theme-light .toastybyte-content.variant-error {
+  color: rgb(185, 28, 28);
+}
+
+.toastybyte-toast.design-neomorphic.theme-light .toastybyte-content.variant-warning {
+  color: rgb(180, 83, 9);
+}
+
+.toastybyte-toast.design-neomorphic.theme-light .toastybyte-content.variant-info {
+  color: rgb(3, 105, 161);
+}
+
+/* Neomorphic - Dark Theme */
+.toastybyte-toast.design-neomorphic.theme-dark {
+  background: rgb(31, 41, 55);
+  border: none;
+  color: rgb(229, 231, 235);
+  box-shadow:
+    12px 12px 24px rgba(0, 0, 0, 0.4),
+    -12px -12px 24px rgba(55, 65, 81, 0.4),
+    inset 2px 2px 4px rgba(55, 65, 81, 0.1);
+}
+
+/* Neomorphic - Icon Containers */
+.toastybyte-icon-container.design-neomorphic.variant-success {
+  background: rgb(209, 250, 229);
+  color: rgb(5, 150, 105);
+  box-shadow:
+    4px 4px 8px rgba(163, 177, 198, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.toastybyte-icon-container.design-neomorphic.variant-error {
+  background: rgb(254, 202, 202);
+  color: rgb(220, 38, 38);
+  box-shadow:
+    4px 4px 8px rgba(163, 177, 198, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.toastybyte-icon-container.design-neomorphic.variant-warning {
+  background: rgb(254, 243, 199);
+  color: rgb(217, 119, 6);
+  box-shadow:
+    4px 4px 8px rgba(163, 177, 198, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.toastybyte-icon-container.design-neomorphic.variant-info {
+  background: rgb(224, 242, 254);
+  color: rgb(2, 132, 199);
+  box-shadow:
+    4px 4px 8px rgba(163, 177, 198, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Neomorphic - Progress Bars */
+.toastybyte-progress-bar.design-neomorphic.variant-success {
+  background: rgb(52, 211, 153);
+}
+
+.toastybyte-progress-bar.design-neomorphic.variant-error {
+  background: rgb(248, 113, 113);
+}
+
+.toastybyte-progress-bar.design-neomorphic.variant-warning {
+  background: rgb(251, 191, 36);
+}
+
+.toastybyte-progress-bar.design-neomorphic.variant-info {
+  background: rgb(56, 189, 248);
+}

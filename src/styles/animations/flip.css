@@ -1,0 +1,41 @@
+/**
+ * Flip Transition
+ * 3D flip with per-segment easing
+ */
+
+@keyframes toastybyte-flip-in {
+  from {
+    opacity: 0;
+    transform: perspective(400px) rotateX(-90deg) scale(0.8);
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  70% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  to {
+    transform: perspective(400px) rotateX(0) scale(1);
+  }
+}
+
+@keyframes toastybyte-flip-out {
+  from {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg) scale(0.8);
+  }
+}
+
+.toastybyte-toast.transition-flip.entering {
+  animation: toastybyte-flip-in 0.45s linear forwards;
+}
+
+.toastybyte-toast.transition-flip.exiting {
+  animation: toastybyte-flip-out 0.2s ease-out forwards;
+}

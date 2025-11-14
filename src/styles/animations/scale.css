@@ -1,0 +1,40 @@
+/**
+ * Scale Transition
+ */
+
+@keyframes toastybyte-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  70% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes toastybyte-scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.toastybyte-toast.transition-scale.entering {
+  animation: toastybyte-scale-in 0.35s linear forwards;
+}
+
+.toastybyte-toast.transition-scale.exiting {
+  animation: toastybyte-scale-out 0.25s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+}

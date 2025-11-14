@@ -1,0 +1,79 @@
+/**
+ * ToastyByte CSS
+ * A modern, professional toast notification library for React and Next.js
+ * Zero dependencies - Pure CSS animations
+ *
+ * @version 1.0.0
+ * @author Daniel Ruppin
+ * @license MIT
+ */
+
+/* ============================================
+   BASE STYLES
+   Core CSS reset, container, and toast foundation
+   ============================================ */
+@import './styles/base.css';
+
+/* ============================================
+   ANIMATIONS
+   12 transition effects - each in its own file
+   ============================================ */
+
+@import './styles/animations/slide.css';
+@import './styles/animations/fade.css';
+@import './styles/animations/scale.css';
+@import './styles/animations/bounce.css';
+@import './styles/animations/flip.css';
+@import './styles/animations/zoom.css';
+@import './styles/animations/blur.css';
+@import './styles/animations/swing.css';
+@import './styles/animations/rotate.css';
+@import './styles/animations/elastic.css';
+@import './styles/animations/drop.css';
+@import './styles/animations/roll.css';
+
+/* ============================================
+   DESIGN PRESETS
+   ============================================ */
+
+/* Modern - Sleek glassmorphism with gradients */
+@import './styles/designs/modern.css';
+
+/* Minimal - Clean and simple */
+@import './styles/designs/minimal.css';
+
+/* Neomorphic - Soft 3D shadows */
+@import './styles/designs/neomorphic.css';
+
+/* Playful - Fun and colorful */
+@import './styles/designs/playful.css';
+
+/* Brutalist - Bold and stark */
+@import './styles/designs/brutalist.css';
+
+/* Premium - Elegant and luxurious */
+@import './styles/designs/premium.css';
+
+/* Gradient - Vibrant gradients */
+@import './styles/designs/gradient.css';
+
+/* Outlined - Transparent with borders */
+@import './styles/designs/outlined.css';
+
+/* Terminal - Developer-inspired */
+@import './styles/designs/terminal.css';
+
+/* 3D - Elevated with shadows */
+@import './styles/designs/threed.css';
+
+/* Cyberpunk - Neon futuristic */
+@import './styles/designs/cyberpunk.css';
+
+/* Oldschool - Retro vibes */
+@import './styles/designs/oldschool.css';
+
+/* Steampunk - Vintage industrial */
+@import './styles/designs/steampunk.css';
+
+/* Pastel - Soft and gentle */
+@import './styles/designs/pastel.css';

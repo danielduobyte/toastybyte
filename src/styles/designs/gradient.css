@@ -1,0 +1,99 @@
+/*
+ * Gradient Design
+ */
+
+/* ============================================
+   GRADIENT DESIGN
+   ============================================ */
+
+/* Gradient - Light Theme */
+.toastybyte-toast.design-gradient.theme-light.variant-success {
+  background: linear-gradient(135deg, rgb(209, 250, 229) 0%, rgb(236, 253, 245) 50%, rgb(204, 251, 241) 100%);
+  border: none;
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-gradient.theme-light.variant-error {
+  background: linear-gradient(135deg, rgb(254, 202, 202) 0%, rgb(255, 241, 242) 50%, rgb(252, 231, 243) 100%);
+  border: none;
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-gradient.theme-light.variant-warning {
+  background: linear-gradient(135deg, rgb(254, 243, 199) 0%, rgb(254, 240, 138) 50%, rgb(253, 230, 138) 100%);
+  border: none;
+  color: rgb(17, 24, 39);
+}
+
+.toastybyte-toast.design-gradient.theme-light.variant-info {
+  background: linear-gradient(135deg, rgb(224, 242, 254) 0%, rgb(240, 249, 255) 50%, rgb(207, 250, 254) 100%);
+  border: none;
+  color: rgb(17, 24, 39);
+}
+
+/* Gradient - Dark Theme */
+.toastybyte-toast.design-gradient.theme-dark.variant-success {
+  background: linear-gradient(135deg, rgb(5, 150, 105) 0%, rgb(4, 120, 87) 50%, rgb(15, 118, 110) 100%);
+  border: none;
+  color: white;
+}
+
+.toastybyte-toast.design-gradient.theme-dark.variant-error {
+  background: linear-gradient(135deg, rgb(220, 38, 38) 0%, rgb(185, 28, 28) 50%, rgb(190, 24, 93) 100%);
+  border: none;
+  color: white;
+}
+
+.toastybyte-toast.design-gradient.theme-dark.variant-warning {
+  background: linear-gradient(135deg, rgb(217, 119, 6) 0%, rgb(194, 65, 12) 50%, rgb(161, 98, 7) 100%);
+  border: none;
+  color: white;
+}
+
+.toastybyte-toast.design-gradient.theme-dark.variant-info {
+  background: linear-gradient(135deg, rgb(37, 99, 235) 0%, rgb(3, 105, 161) 50%, rgb(14, 116, 144) 100%);
+  border: none;
+  color: white;
+}
+
+/* Gradient - Icon Containers */
+.toastybyte-icon-container.design-gradient.variant-success {
+  background: linear-gradient(135deg, rgb(167, 243, 208) 0%, rgb(134, 239, 172) 100%);
+  color: rgb(6, 78, 59);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.toastybyte-icon-container.design-gradient.variant-error {
+  background: linear-gradient(135deg, rgb(252, 165, 165) 0%, rgb(248, 113, 113) 100%);
+  color: rgb(127, 29, 29);
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.3);
+}
+
+.toastybyte-icon-container.design-gradient.variant-warning {
+  background: linear-gradient(135deg, rgb(253, 224, 71) 0%, rgb(252, 211, 77) 100%);
+  color: rgb(120, 53, 15);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+}
+
+.toastybyte-icon-container.design-gradient.variant-info {
+  background: linear-gradient(135deg, rgb(147, 197, 253) 0%, rgb(125, 211, 252) 100%);
+  color: rgb(30, 58, 138);
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+/* Gradient - Progress Bars */
+.toastybyte-progress-bar.design-gradient.variant-success {
+  background: linear-gradient(90deg, rgb(167, 243, 208) 0%, rgb(134, 239, 172) 100%);
+}
+
+.toastybyte-progress-bar.design-gradient.variant-error {
+  background: linear-gradient(90deg, rgb(252, 165, 165) 0%, rgb(248, 113, 113) 100%);
+}
+
+.toastybyte-progress-bar.design-gradient.variant-warning {
+  background: linear-gradient(90deg, rgb(253, 224, 71) 0%, rgb(252, 211, 77) 100%);
+}
+
+.toastybyte-progress-bar.design-gradient.variant-info {
+  background: linear-gradient(90deg, rgb(147, 197, 253) 0%, rgb(125, 211, 252) 100%);
+}

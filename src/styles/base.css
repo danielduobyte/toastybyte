@@ -1,0 +1,305 @@
+/**
+ * ToastyByte - Base Styles
+ * Core CSS reset, container positioning, and toast base styles
+ */
+
+/* ============================================
+   CSS RESET & BASE STYLES
+   ============================================ */
+
+.toastybyte-reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.toastybyte-reset *,
+.toastybyte-reset *::before,
+.toastybyte-reset *::after {
+  box-sizing: inherit;
+}
+
+/* ============================================
+   CONTAINER POSITIONING
+   ============================================ */
+
+.toastybyte-container {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+/* Mobile: all toasts centered */
+.toastybyte-container.top-left,
+.toastybyte-container.top-center,
+.toastybyte-container.top-right {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.toastybyte-container.bottom-left,
+.toastybyte-container.bottom-center,
+.toastybyte-container.bottom-right {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+/* Desktop: respect positioning */
+@media (min-width: 768px) {
+
+  .toastybyte-container.top-left,
+  .toastybyte-container.bottom-left {
+    left: 1rem;
+    transform: none;
+    align-items: flex-start;
+  }
+
+  .toastybyte-container.top-right,
+  .toastybyte-container.bottom-right {
+    left: auto;
+    right: 1rem;
+    transform: none;
+    align-items: flex-end;
+  }
+
+  .toastybyte-container.top-center,
+  .toastybyte-container.bottom-center {
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+  }
+}
+
+/* ============================================
+   TOAST BASE STYLES
+   ============================================ */
+
+.toastybyte-toast {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  width: calc(100vw - 2rem);
+  max-width: 340px;
+  overflow: hidden;
+  pointer-events: auto;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .toastybyte-toast {
+    min-width: 340px;
+    max-width: 28rem;
+  }
+}
+
+/* Backdrop Blur Utilities */
+.toastybyte-toast.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.toastybyte-toast.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.toastybyte-toast.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.toastybyte-toast.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.toastybyte-toast.backdrop-blur-2xl {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.toastybyte-toast.backdrop-blur-3xl {
+  backdrop-filter: blur(64px);
+  -webkit-backdrop-filter: blur(64px);
+}
+
+/* ============================================
+   FONT SIZE SCALE
+   ============================================ */
+
+:root {
+  --toastybyte-font-xs: 0.625rem;
+  /* 10px */
+  --toastybyte-font-sm: 0.75rem;
+  /* 12px */
+  --toastybyte-font-md: 0.875rem;
+  /* 14px */
+  --toastybyte-font-lg: 1rem;
+  /* 16px */
+  --toastybyte-font-xl: 1.125rem;
+  /* 18px */
+  --toastybyte-font-xxl: 1.25rem;
+  /* 20px */
+}
+
+/* Font size utility classes for predefined sizes */
+.toastybyte-font-xs {
+  font-size: var(--toastybyte-font-xs);
+}
+
+.toastybyte-font-sm {
+  font-size: var(--toastybyte-font-sm);
+}
+
+.toastybyte-font-md {
+  font-size: var(--toastybyte-font-md);
+}
+
+.toastybyte-font-lg {
+  font-size: var(--toastybyte-font-lg);
+}
+
+.toastybyte-font-xl {
+  font-size: var(--toastybyte-font-xl);
+}
+
+.toastybyte-font-xxl {
+  font-size: var(--toastybyte-font-xxl);
+}
+
+/* ============================================
+   ICON CONTAINER
+   ============================================ */
+
+.toastybyte-icon-container {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================
+   CONTENT AREA
+   ============================================ */
+
+.toastybyte-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0.5rem;
+  min-height: 2.5rem;
+}
+
+.toastybyte-content {
+  justify-content: flex-start;
+}
+
+.toastybyte-content.center-title {
+  justify-content: center;
+}
+
+.toastybyte-message {
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: var(--toastybyte-font-md);
+  margin: 0;
+}
+
+.toastybyte-description {
+  opacity: 0.75;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: var(--toastybyte-font-sm);
+  margin: 0;
+}
+
+.toastybyte-message+.toastybyte-description {
+  margin-top: 0.2rem;
+}
+
+/* ============================================
+   CLOSE BUTTON
+   ============================================ */
+
+.toastybyte-close-button {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toastybyte-close-button:hover {
+  opacity: 1;
+}
+
+.toastybyte-close-button:focus {
+  outline: none;
+}
+
+.toastybyte-close-button svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.toastybyte-close-button:hover svg {
+  transform: scale(1.1);
+}
+
+.toastybyte-close-button.theme-light:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toastybyte-close-button.theme-light {
+  color: rgb(55, 65, 81);
+}
+
+.toastybyte-close-button.theme-dark:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+
+.toastybyte-progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+}
+
+.toastybyte-progress-track.theme-light {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toastybyte-progress-track.theme-dark {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.toastybyte-progress-bar {
+  height: 100%;
+  will-change: width;
+}
