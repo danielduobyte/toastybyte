@@ -1,6 +1,6 @@
 {
   "name": "toastybyte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern, professional toast notification library for React and Next.js",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
