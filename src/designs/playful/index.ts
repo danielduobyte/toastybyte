@@ -7,7 +7,7 @@ export const playfulDesign: DesignPreset = {
   config: {
     borderRadius: '2rem',
     backdropBlur: {
-      light: false,
+      light: 'md',
       dark: 'md',
     },
     shadows: {

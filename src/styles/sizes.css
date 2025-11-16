@@ -1,0 +1,66 @@
+/*
+ * ToastyByte - Size Variants
+ * Defines CSS custom properties for all size variants (xs, sm, md, lg, xl)
+ */
+
+:root {
+  /* XS - Extra Small */
+  --toastybyte-size-xs-padding: 0.625rem;
+  --toastybyte-size-xs-gap: 0.5rem;
+  --toastybyte-size-xs-icon: 1.75rem;
+  --toastybyte-size-xs-icon-inner: 0.875rem;
+  --toastybyte-size-xs-close: 1.25rem;
+  --toastybyte-size-xs-close-icon: 0.625rem;
+  --toastybyte-size-xs-progress: 0.125rem;
+  --toastybyte-size-xs-min-width: 240px;
+  --toastybyte-size-xs-max-width: 20rem;
+  --toastybyte-size-xs-border-radius: 0.5rem;
+
+  /* SM - Small */
+  --toastybyte-size-sm-padding: 0.75rem;
+  --toastybyte-size-sm-gap: 0.625rem;
+  --toastybyte-size-sm-icon: 2rem;
+  --toastybyte-size-sm-icon-inner: 1rem;
+  --toastybyte-size-sm-close: 1.5rem;
+  --toastybyte-size-sm-close-icon: 0.75rem;
+  --toastybyte-size-sm-progress: 0.1875rem;
+  --toastybyte-size-sm-min-width: 280px;
+  --toastybyte-size-sm-max-width: 24rem;
+  --toastybyte-size-sm-border-radius: 0.625rem;
+
+  /* MD - Medium (Default) */
+  --toastybyte-size-md-padding: 1rem;
+  --toastybyte-size-md-gap: 0.75rem;
+  --toastybyte-size-md-icon: 2.5rem;
+  --toastybyte-size-md-icon-inner: 1.25rem;
+  --toastybyte-size-md-close: 1.75rem;
+  --toastybyte-size-md-close-icon: 1rem;
+  --toastybyte-size-md-progress: 0.25rem;
+  --toastybyte-size-md-min-width: 340px;
+  --toastybyte-size-md-max-width: 28rem;
+  --toastybyte-size-md-border-radius: 0.75rem;
+
+  /* LG - Large */
+  --toastybyte-size-lg-padding: 1.25rem;
+  --toastybyte-size-lg-gap: 1rem;
+  --toastybyte-size-lg-icon: 3rem;
+  --toastybyte-size-lg-icon-inner: 1.5rem;
+  --toastybyte-size-lg-close: 2rem;
+  --toastybyte-size-lg-close-icon: 1.25rem;
+  --toastybyte-size-lg-progress: 0.3125rem;
+  --toastybyte-size-lg-min-width: 400px;
+  --toastybyte-size-lg-max-width: 32rem;
+  --toastybyte-size-lg-border-radius: 1rem;
+
+  /* XL - Extra Large */
+  --toastybyte-size-xl-padding: 1.5rem;
+  --toastybyte-size-xl-gap: 1.25rem;
+  --toastybyte-size-xl-icon: 3.5rem;
+  --toastybyte-size-xl-icon-inner: 1.75rem;
+  --toastybyte-size-xl-close: 2.25rem;
+  --toastybyte-size-xl-close-icon: 1.5rem;
+  --toastybyte-size-xl-progress: 0.375rem;
+  --toastybyte-size-xl-min-width: 480px;
+  --toastybyte-size-xl-max-width: 36rem;
+  --toastybyte-size-xl-border-radius: 1.25rem;
+}

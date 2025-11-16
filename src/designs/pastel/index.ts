@@ -7,8 +7,8 @@ export const pastelDesign: DesignPreset = {
   config: {
     borderRadius: '1.25rem',
     backdropBlur: {
-      light: false,
-      dark: 'sm',
+      light: 'md',
+      dark: 'md',
     },
     shadows: {
       light: '0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04)',

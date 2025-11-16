@@ -8,27 +8,31 @@
 
 /* Premium - Light Theme */
 .toastybyte-toast.design-premium.theme-light.variant-success {
-  background: linear-gradient(135deg, white 0%, rgba(236, 253, 245, 0.5) 100%);
-  border: 1px solid rgba(167, 243, 208, 0.6);
-  color: rgb(17, 24, 39);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(209, 250, 229, 0.7) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: rgb(6, 78, 59);
+  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.08);
 }
 
 .toastybyte-toast.design-premium.theme-light.variant-error {
-  background: linear-gradient(135deg, white 0%, rgba(255, 241, 242, 0.5) 100%);
-  border: 1px solid rgba(254, 205, 211, 0.6);
-  color: rgb(17, 24, 39);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(254, 202, 202, 0.7) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  color: rgb(127, 29, 29);
+  box-shadow: 0 4px 24px rgba(244, 63, 94, 0.08);
 }
 
 .toastybyte-toast.design-premium.theme-light.variant-warning {
-  background: linear-gradient(135deg, white 0%, rgba(254, 252, 232, 0.5) 100%);
-  border: 1px solid rgba(253, 230, 138, 0.6);
-  color: rgb(17, 24, 39);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(254, 243, 199, 0.7) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: rgb(120, 53, 15);
+  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.08);
 }
 
 .toastybyte-toast.design-premium.theme-light.variant-info {
-  background: linear-gradient(135deg, white 0%, rgba(240, 249, 255, 0.5) 100%);
-  border: 1px solid rgba(186, 230, 253, 0.6);
-  color: rgb(17, 24, 39);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(224, 242, 254, 0.7) 100%);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  color: rgb(12, 74, 110);
+  box-shadow: 0 4px 24px rgba(14, 165, 233, 0.08);
 }
 
 /* Premium - Dark Theme */

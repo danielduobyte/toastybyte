@@ -8,39 +8,39 @@
 
 /* 3D - Light Theme */
 .toastybyte-toast.design-threed.theme-light.variant-success {
-  background: rgb(209, 250, 229);
-  border: 2px solid rgb(167, 243, 208);
-  color: rgb(17, 24, 39);
+  background: rgba(230, 250, 245, 0.8);
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  color: rgb(6, 78, 59);
   box-shadow:
-    6px 6px 0 0 rgba(16, 185, 129, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.1);
+    6px 6px 0 0 rgba(16, 185, 129, 0.25),
+    0 4px 20px rgba(16, 185, 129, 0.15);
 }
 
 .toastybyte-toast.design-threed.theme-light.variant-error {
-  background: rgb(254, 202, 202);
-  border: 2px solid rgb(254, 205, 211);
-  color: rgb(17, 24, 39);
+  background: rgba(254, 235, 240, 0.8);
+  border: 2px solid rgba(244, 63, 94, 0.4);
+  color: rgb(127, 29, 29);
   box-shadow:
-    6px 6px 0 0 rgba(244, 63, 94, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.1);
+    6px 6px 0 0 rgba(244, 63, 94, 0.25),
+    0 4px 20px rgba(244, 63, 94, 0.15);
 }
 
 .toastybyte-toast.design-threed.theme-light.variant-warning {
-  background: rgb(254, 243, 199);
-  border: 2px solid rgb(253, 230, 138);
-  color: rgb(17, 24, 39);
+  background: rgba(254, 248, 235, 0.8);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  color: rgb(120, 53, 15);
   box-shadow:
-    6px 6px 0 0 rgba(245, 158, 11, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.1);
+    6px 6px 0 0 rgba(245, 158, 11, 0.25),
+    0 4px 20px rgba(245, 158, 11, 0.15);
 }
 
 .toastybyte-toast.design-threed.theme-light.variant-info {
-  background: rgb(224, 242, 254);
-  border: 2px solid rgb(186, 230, 253);
-  color: rgb(17, 24, 39);
+  background: rgba(235, 248, 254, 0.8);
+  border: 2px solid rgba(14, 165, 233, 0.4);
+  color: rgb(12, 74, 110);
   box-shadow:
-    6px 6px 0 0 rgba(14, 165, 233, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.1);
+    6px 6px 0 0 rgba(14, 165, 233, 0.25),
+    0 4px 20px rgba(14, 165, 233, 0.15);
 }
 
 /* 3D - Dark Theme */

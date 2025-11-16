@@ -12,7 +12,7 @@ export const brutalistDesign: DesignPreset = {
     },
     shadows: {
       light: '12px 12px 0px rgba(0, 0, 0, 1)',
-      dark: '12px 12px 0px rgba(255, 255, 255, 1)',
+      dark: '12px 12px 0px rgba(0, 0, 0, 1)',
     },
     spacing: {
       padding: '1rem',

@@ -15,6 +15,12 @@
 @import './styles/base.css';
 
 /* ============================================
+   SIZE VARIANTS
+   CSS custom properties for sm, md, lg sizes
+   ============================================ */
+@import './styles/sizes.css';
+
+/* ============================================
    ANIMATIONS
    12 transition effects - each in its own file
    ============================================ */

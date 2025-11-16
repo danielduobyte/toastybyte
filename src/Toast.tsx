@@ -1,13 +1,81 @@
 'use client';
 
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
-import type { Toast as ToastType } from './types';
+import type { Toast as ToastType, ToastSize } from './types';
 import { designs } from './designs';
 
 interface ToastProps {
   toast: ToastType;
   onRemove: (id: string) => void;
 }
+
+interface SizeConfig {
+  padding: string;
+  gap: string;
+  iconSize: string;
+  iconInnerSize: string;
+  closeButtonSize: string;
+  closeButtonIconSize: string;
+  progressBarHeight: string;
+  minWidth: string;
+  maxWidth: string;
+  borderRadius: string;
+  contentGap: string;
+  titleFontSize: string;
+  descriptionFontSize: string;
+  contentMinHeight: string;
+}
+
+const sizeConfigs: Record<ToastSize, SizeConfig> = {
+  sm: {
+    padding: '0.75rem',
+    gap: '0.625rem',
+    iconSize: '2rem',
+    iconInnerSize: '1rem',
+    closeButtonSize: '1.5rem',
+    closeButtonIconSize: '0.75rem',
+    progressBarHeight: '0.1875rem',
+    minWidth: '280px',
+    maxWidth: '24rem',
+    borderRadius: '0.625rem',
+    contentGap: '0.15rem',
+    titleFontSize: 'var(--toastybyte-font-sm)',
+    descriptionFontSize: 'var(--toastybyte-font-xs)',
+    contentMinHeight: '2rem',
+  },
+  md: {
+    padding: '1rem',
+    gap: '0.75rem',
+    iconSize: '2.5rem',
+    iconInnerSize: '1.25rem',
+    closeButtonSize: '1.75rem',
+    closeButtonIconSize: '1rem',
+    progressBarHeight: '0.25rem',
+    minWidth: '340px',
+    maxWidth: '28rem',
+    borderRadius: '0.75rem',
+    contentGap: '0.2rem',
+    titleFontSize: 'var(--toastybyte-font-md)',
+    descriptionFontSize: 'var(--toastybyte-font-sm)',
+    contentMinHeight: '2.5rem',
+  },
+  lg: {
+    padding: '1.25rem',
+    gap: '1rem',
+    iconSize: '3rem',
+    iconInnerSize: '1.5rem',
+    closeButtonSize: '2rem',
+    closeButtonIconSize: '1.25rem',
+    progressBarHeight: '0.3125rem',
+    minWidth: '400px',
+    maxWidth: '32rem',
+    borderRadius: '1rem',
+    contentGap: '0.25rem',
+    titleFontSize: 'var(--toastybyte-font-lg)',
+    descriptionFontSize: 'var(--toastybyte-font-md)',
+    contentMinHeight: '3rem',
+  },
+};
 
 const detectTheme = (): 'light' | 'dark' => {
   if (typeof window === 'undefined') return 'dark';
@@ -19,9 +87,22 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
   const transition = toast.transition || 'slide';
   const designType = toast.design || 'modern';
   const design = designs[designType];
+  const size = toast.size || 'md';
+  const sizeConfig = sizeConfigs[size];
 
-  // Get design-specific icons
   const DefaultIcon = design.icons?.[variant] || (() => null);
+
+  const resolvedSize = {
+    padding: toast.style?.padding || sizeConfig.padding,
+    gap: toast.style?.gap || sizeConfig.gap,
+    iconSize: toast.style?.iconSize || sizeConfig.iconSize,
+    iconInnerSize: toast.style?.iconInnerSize || sizeConfig.iconInnerSize,
+    closeButtonSize: toast.style?.closeButtonSize || sizeConfig.closeButtonSize,
+    closeButtonIconSize: toast.style?.closeButtonIconSize || sizeConfig.closeButtonIconSize,
+    progressBarHeight: toast.style?.progressBarHeight || sizeConfig.progressBarHeight,
+    minWidth: toast.style?.minWidth || design.config?.dimensions?.minWidth || sizeConfig.minWidth,
+    maxWidth: toast.style?.maxWidth || design.config?.dimensions?.maxWidth || sizeConfig.maxWidth,
+  };
 
   const [progress, setProgress] = useState(100);
   const [animationState, setAnimationState] = useState<'entering' | 'entered' | 'exiting'>('entering');
@@ -152,7 +233,7 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
 
   const customColors = toast.style?.colors;
   const customFont = toast.style?.font;
-  const borderRadius = toast.style?.borderRadius || design.config?.borderRadius || '1rem';
+  const borderRadius = toast.style?.borderRadius || design.config?.borderRadius || sizeConfig.borderRadius;
 
   // Helper function to map predefined font sizes to CSS variables
   const getFontSize = (size: string | undefined, defaultSize: string): string => {
@@ -178,6 +259,10 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
 
   const customStyle: React.CSSProperties = {
     borderRadius,
+    padding: resolvedSize.padding,
+    gap: resolvedSize.gap,
+    minWidth: resolvedSize.minWidth,
+    maxWidth: resolvedSize.maxWidth,
     ...(design.config?.shadows && {
       boxShadow: currentTheme === 'light' ? design.config.shadows.light : design.config.shadows.dark,
     }),
@@ -237,21 +322,25 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
       <div
         className={iconClasses}
         style={{
+          width: resolvedSize.iconSize,
+          height: resolvedSize.iconSize,
           borderRadius: `calc(${borderRadius} * 0.6)`,
           ...(customColors?.iconBackground && { background: customColors.iconBackground }),
           ...(customColors?.iconColor && { color: customColors.iconColor }),
         }}
       >
-        {toast.icon || <DefaultIcon />}
+        <div style={{ width: resolvedSize.iconInnerSize, height: resolvedSize.iconInnerSize }}>
+          {toast.icon || <DefaultIcon />}
+        </div>
       </div>
 
       {/* Content */}
-      <div ref={contentRef} className={contentClasses}>
+      <div ref={contentRef} className={contentClasses} style={{ minHeight: sizeConfig.contentMinHeight }}>
         {toast.message && (
           <p
             className="toastybyte-message"
             style={{
-              fontSize: getFontSize(customFont?.titleSize || customFont?.size, 'var(--toastybyte-font-md)'),
+              fontSize: getFontSize(customFont?.titleSize || customFont?.size, sizeConfig.titleFontSize),
               fontWeight: customFont?.weight || 600,
               ...(customColors?.text && { color: customColors.text }),
               ...(customFont?.strokeWidth && {
@@ -267,8 +356,9 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
           <p
             className="toastybyte-description"
             style={{
-              fontSize: getFontSize(customFont?.descriptionSize || customFont?.size, 'var(--toastybyte-font-sm)'),
+              fontSize: getFontSize(customFont?.descriptionSize || customFont?.size, sizeConfig.descriptionFontSize),
               fontWeight: customFont?.weight || 400,
+              marginTop: sizeConfig.contentGap,
               ...(customColors?.text && { color: customColors.text }),
               ...(customFont?.strokeWidth && {
                 WebkitTextStroke: `${customFont.strokeWidth} ${customFont.strokeColor || '#000'}`,
@@ -287,12 +377,14 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
           onClick={handleClose}
           className={closeButtonClasses}
           style={{
+            width: resolvedSize.closeButtonSize,
+            height: resolvedSize.closeButtonSize,
             borderRadius: `calc(${borderRadius} * 0.5)`,
             ...(customColors?.closeButton && { color: customColors.closeButton }),
           }}
           aria-label="Close"
         >
-          <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <svg style={{ width: resolvedSize.closeButtonIconSize, height: resolvedSize.closeButtonIconSize }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -300,7 +392,7 @@ export const Toast: React.FC<ToastProps> = ({ toast, onRemove }) => {
 
       {/* Progress Bar */}
       {toast.showProgressBar && toast.duration !== 0 && (
-        <div className={progressTrackClasses}>
+        <div className={progressTrackClasses} style={{ height: resolvedSize.progressBarHeight }}>
           <div
             className={progressBarClasses}
             style={{

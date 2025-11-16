@@ -31,6 +31,7 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({ children, design: 
       pauseOnHover: options?.pauseOnHover !== undefined ? options.pauseOnHover : true,
       theme: options?.theme,
       design: options?.design || globalDesign,
+      size: options?.size || 'md',
       style: options?.style,
     };
 

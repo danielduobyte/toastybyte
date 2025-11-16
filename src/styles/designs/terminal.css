@@ -9,27 +9,31 @@
 
 /* Terminal - Light Theme */
 .toastybyte-toast.design-terminal.theme-light.variant-success {
-  background: rgb(249, 250, 251);
-  border: 1px solid rgb(52, 211, 153);
+  background: rgb(243, 244, 246);
+  border: 1px solid rgb(16, 185, 129);
   color: rgb(4, 120, 87);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .toastybyte-toast.design-terminal.theme-light.variant-error {
-  background: rgb(249, 250, 251);
-  border: 1px solid rgb(248, 113, 113);
+  background: rgb(243, 244, 246);
+  border: 1px solid rgb(244, 63, 94);
   color: rgb(185, 28, 28);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .toastybyte-toast.design-terminal.theme-light.variant-warning {
-  background: rgb(249, 250, 251);
-  border: 1px solid rgb(251, 191, 36);
+  background: rgb(243, 244, 246);
+  border: 1px solid rgb(245, 158, 11);
   color: rgb(180, 83, 9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .toastybyte-toast.design-terminal.theme-light.variant-info {
-  background: rgb(249, 250, 251);
-  border: 1px solid rgb(34, 211, 238);
+  background: rgb(243, 244, 246);
+  border: 1px solid rgb(6, 182, 212);
   color: rgb(15, 118, 110);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 /* Terminal - Dark Theme */

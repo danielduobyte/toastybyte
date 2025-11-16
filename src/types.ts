@@ -42,6 +42,8 @@ export type DesignType =
 
 export type FontSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
+export type ToastSize = 'sm' | 'md' | 'lg';
+
 export interface ToastColors {
   background?: string;
   border?: string;
@@ -67,6 +69,15 @@ export interface ToastStyle {
   backdropBlur?: string | false;
   colors?: ToastColors;
   font?: ToastFont;
+  padding?: string;
+  gap?: string;
+  iconSize?: string;
+  iconInnerSize?: string;
+  closeButtonSize?: string;
+  closeButtonIconSize?: string;
+  progressBarHeight?: string;
+  minWidth?: string;
+  maxWidth?: string;
 }
 
 export interface Toast {
@@ -83,6 +94,7 @@ export interface Toast {
   pauseOnHover?: boolean;
   theme?: ToastTheme;
   design?: DesignType;
+  size?: ToastSize;
   style?: ToastStyle;
 }
 
@@ -98,6 +110,7 @@ export interface ToastOptions {
   pauseOnHover?: boolean;
   theme?: ToastTheme;
   design?: DesignType;
+  size?: ToastSize;
   style?: ToastStyle;
 }
 

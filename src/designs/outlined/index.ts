@@ -7,7 +7,7 @@ export const outlinedDesign: DesignPreset = {
   config: {
     borderRadius: '0.75rem',
     backdropBlur: {
-      light: 'sm',
+      light: 'md',
       dark: 'md',
     },
     shadows: {

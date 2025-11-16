@@ -7,7 +7,7 @@ export const modernDesign: DesignPreset = {
   config: {
     borderRadius: '1rem',
     backdropBlur: {
-      light: 'xl',
+      light: '2xl',
       dark: 'xl',
     },
     shadows: {

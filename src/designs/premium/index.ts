@@ -7,7 +7,7 @@ export const premiumDesign: DesignPreset = {
   config: {
     borderRadius: '1.25rem',
     backdropBlur: {
-      light: 'sm',
+      light: 'md',
       dark: 'xl',
     },
     shadows: {

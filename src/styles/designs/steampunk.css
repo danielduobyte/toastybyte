@@ -8,27 +8,31 @@
 
 /* Steampunk - Light Theme */
 .toastybyte-toast.design-steampunk.theme-light.variant-success {
-  background: rgb(254, 252, 232);
+  background: rgb(245, 243, 215);
   border: 2px solid rgb(180, 83, 9);
   color: rgb(120, 53, 15);
+  box-shadow: 0 3px 12px rgba(180, 83, 9, 0.15);
 }
 
 .toastybyte-toast.design-steampunk.theme-light.variant-error {
-  background: rgb(255, 247, 237);
+  background: rgb(247, 237, 230);
   border: 2px solid rgb(154, 52, 18);
   color: rgb(124, 45, 18);
+  box-shadow: 0 3px 12px rgba(154, 52, 18, 0.15);
 }
 
 .toastybyte-toast.design-steampunk.theme-light.variant-warning {
-  background: rgb(254, 252, 232);
+  background: rgb(245, 243, 215);
   border: 2px solid rgb(161, 98, 7);
   color: rgb(133, 77, 14);
+  box-shadow: 0 3px 12px rgba(161, 98, 7, 0.15);
 }
 
 .toastybyte-toast.design-steampunk.theme-light.variant-info {
-  background: rgb(250, 250, 249);
+  background: rgb(238, 237, 235);
   border: 2px solid rgb(120, 113, 108);
   color: rgb(87, 83, 78);
+  box-shadow: 0 3px 12px rgba(120, 113, 108, 0.15);
 }
 
 /* Steampunk - Dark Theme */

@@ -8,27 +8,31 @@
 
 /* Pastel - Light Theme */
 .toastybyte-toast.design-pastel.theme-light.variant-success {
-  background: rgb(209, 250, 229);
-  border: 1px solid rgb(167, 243, 208);
+  background: rgba(230, 250, 245, 0.8);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   color: rgb(6, 78, 59);
+  box-shadow: 0 2px 12px rgba(16, 185, 129, 0.12), 0 8px 24px rgba(16, 185, 129, 0.08);
 }
 
 .toastybyte-toast.design-pastel.theme-light.variant-error {
-  background: rgb(254, 202, 202);
-  border: 1px solid rgb(254, 205, 211);
+  background: rgba(254, 235, 240, 0.8);
+  border: 1px solid rgba(244, 63, 94, 0.3);
   color: rgb(127, 29, 29);
+  box-shadow: 0 2px 12px rgba(244, 63, 94, 0.12), 0 8px 24px rgba(244, 63, 94, 0.08);
 }
 
 .toastybyte-toast.design-pastel.theme-light.variant-warning {
-  background: rgb(254, 243, 199);
-  border: 1px solid rgb(253, 230, 138);
+  background: rgba(254, 248, 235, 0.8);
+  border: 1px solid rgba(245, 158, 11, 0.3);
   color: rgb(120, 53, 15);
+  box-shadow: 0 2px 12px rgba(245, 158, 11, 0.12), 0 8px 24px rgba(245, 158, 11, 0.08);
 }
 
 .toastybyte-toast.design-pastel.theme-light.variant-info {
-  background: rgb(219, 234, 254);
-  border: 1px solid rgb(191, 219, 254);
-  color: rgb(30, 58, 138);
+  background: rgba(235, 248, 254, 0.8);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  color: rgb(12, 74, 110);
+  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.12), 0 8px 24px rgba(14, 165, 233, 0.08);
 }
 
 /* Pastel - Dark Theme */

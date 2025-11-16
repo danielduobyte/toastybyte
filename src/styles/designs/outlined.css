@@ -8,27 +8,31 @@
 
 /* Outlined - Light Theme */
 .toastybyte-toast.design-outlined.theme-light.variant-success {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(240, 253, 244, 0.7);
   border: 2px solid rgb(16, 185, 129);
-  color: rgb(17, 24, 39);
+  color: rgb(6, 78, 59);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.1);
 }
 
 .toastybyte-toast.design-outlined.theme-light.variant-error {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(254, 242, 242, 0.7);
   border: 2px solid rgb(244, 63, 94);
-  color: rgb(17, 24, 39);
+  color: rgb(127, 29, 29);
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.1);
 }
 
 .toastybyte-toast.design-outlined.theme-light.variant-warning {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 251, 235, 0.7);
   border: 2px solid rgb(245, 158, 11);
-  color: rgb(17, 24, 39);
+  color: rgb(120, 53, 15);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.1);
 }
 
 .toastybyte-toast.design-outlined.theme-light.variant-info {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(240, 249, 255, 0.7);
   border: 2px solid rgb(14, 165, 233);
-  color: rgb(17, 24, 39);
+  color: rgb(12, 74, 110);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.1);
 }
 
 /* Outlined - Dark Theme */

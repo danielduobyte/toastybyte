@@ -8,27 +8,31 @@
 
 /* Minimal - Light Theme */
 .toastybyte-toast.design-minimal.theme-light.variant-success {
-  background: white;
-  border: 1px solid rgb(167, 243, 208);
-  color: rgb(17, 24, 39);
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(16, 185, 129);
+  color: rgb(6, 78, 59);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .toastybyte-toast.design-minimal.theme-light.variant-error {
-  background: white;
-  border: 1px solid rgb(254, 205, 211);
-  color: rgb(17, 24, 39);
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(244, 63, 94);
+  color: rgb(127, 29, 29);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .toastybyte-toast.design-minimal.theme-light.variant-warning {
-  background: white;
-  border: 1px solid rgb(253, 230, 138);
-  color: rgb(17, 24, 39);
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(245, 158, 11);
+  color: rgb(120, 53, 15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .toastybyte-toast.design-minimal.theme-light.variant-info {
-  background: white;
-  border: 1px solid rgb(186, 230, 253);
-  color: rgb(17, 24, 39);
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(14, 165, 233);
+  color: rgb(12, 74, 110);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 /* Minimal - Dark Theme */

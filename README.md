@@ -6,6 +6,7 @@ A modern, professional toast notification library for React and Next.js with **z
 
 - **Zero Dependencies**: No external CSS frameworks or animation libraries required - pure CSS animations
 - **14 Design Presets**: Modern, Minimal, Neomorphic, Playful, Brutalist, Premium, Gradient, Outlined, Terminal, 3D, Cyberpunk, Oldschool, Steampunk, and Pastel
+- **3 Size Variants**: Small, medium, and large toast sizes with responsive scaling
 - **Light & Dark Themes**: Manual control about design presets based on the project fitting
 - **Fully Responsive**: Auto-centers on mobile devices, respects positioning on desktop
 - **Multiple Positions**: Display toasts in 6 different positions (top/bottom × left/center/right)
@@ -188,6 +189,23 @@ info('Quick message', { duration: 3000 });
 info('Sticky message', { duration: 0 });
 ```
 
+### Toast Sizes
+
+Choose from three size variants:
+
+```tsx
+const { success } = useToast();
+
+// Small size
+success('Compact message', { size: 'sm' });
+
+// Medium size (default)
+success('Standard message', { size: 'md' });
+
+// Large size
+success('Prominent message', { size: 'lg' });
+```
+
 ### Description Field
 
 Add secondary text below the main message:
@@ -252,6 +270,7 @@ interface ToastOptions {
   duration?: number; // milliseconds, 0 for no auto-dismiss
   design?: 'modern' | 'minimal' | 'neomorphic' | 'playful' | 'brutalist' | 'premium' | 'gradient' | 'outlined' | 'terminal' | 'threed' | 'cyberpunk' | 'oldschool' | 'steampunk' | 'pastel';
   theme?: 'light' | 'dark' | 'auto';
+  size?: 'sm' | 'md' | 'lg';
   transition?: 'slide' | 'fade' | 'scale' | 'bounce' | 'flip' | 'zoom' | 'blur' | 'swing' | 'rotate' | 'elastic' | 'drop' | 'roll';
   description?: string;
   icon?: React.ReactNode;
@@ -401,7 +420,8 @@ import type {
   ToastOptions,
   ToastTransition,
   ToastTheme,
-  DesignType
+  DesignType,
+  ToastSize
 } from 'toastybyte';
 ```
 ## Browser Support

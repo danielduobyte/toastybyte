@@ -7,8 +7,8 @@ export const threedDesign: DesignPreset = {
   config: {
     borderRadius: '1rem',
     backdropBlur: {
-      light: false,
-      dark: false,
+      light: 'lg',
+      dark: 'lg',
     },
     shadows: {
       light: '0 20px 50px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05)',

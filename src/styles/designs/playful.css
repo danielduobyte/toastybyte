@@ -8,27 +8,39 @@
 
 /* Playful - Light Theme */
 .toastybyte-toast.design-playful.theme-light.variant-success {
-  background: linear-gradient(90deg, rgb(236, 253, 245) 0%, rgb(220, 252, 231) 100%);
-  border: 2px solid rgb(167, 243, 208);
-  color: rgb(17, 24, 39);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.68) 100%),
+    linear-gradient(90deg, rgba(5, 150, 105, 0.08) 0%, rgba(4, 120, 87, 0.12) 100%);
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  color: rgb(6, 78, 59);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.18), 0 8px 32px rgba(16, 185, 129, 0.12);
 }
 
 .toastybyte-toast.design-playful.theme-light.variant-error {
-  background: linear-gradient(90deg, rgb(255, 241, 242) 0%, rgb(254, 226, 226) 100%);
-  border: 2px solid rgb(254, 205, 211);
-  color: rgb(17, 24, 39);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.68) 100%),
+    linear-gradient(90deg, rgba(220, 38, 38, 0.08) 0%, rgba(185, 28, 28, 0.12) 100%);
+  border: 2px solid rgba(244, 63, 94, 0.4);
+  color: rgb(127, 29, 29);
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.18), 0 8px 32px rgba(244, 63, 94, 0.12);
 }
 
 .toastybyte-toast.design-playful.theme-light.variant-warning {
-  background: linear-gradient(90deg, rgb(254, 252, 232) 0%, rgb(254, 249, 195) 100%);
-  border: 2px solid rgb(253, 230, 138);
-  color: rgb(17, 24, 39);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.68) 100%),
+    linear-gradient(90deg, rgba(217, 119, 6, 0.08) 0%, rgba(180, 83, 9, 0.12) 100%);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  color: rgb(120, 53, 15);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.18), 0 8px 32px rgba(245, 158, 11, 0.12);
 }
 
 .toastybyte-toast.design-playful.theme-light.variant-info {
-  background: linear-gradient(90deg, rgb(240, 249, 255) 0%, rgb(224, 242, 254) 100%);
-  border: 2px solid rgb(186, 230, 253);
-  color: rgb(17, 24, 39);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.68) 100%),
+    linear-gradient(90deg, rgba(2, 132, 199, 0.08) 0%, rgba(3, 105, 161, 0.12) 100%);
+  border: 2px solid rgba(14, 165, 233, 0.4);
+  color: rgb(12, 74, 110);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.18), 0 8px 32px rgba(14, 165, 233, 0.12);
 }
 
 /* Playful - Dark Theme */
